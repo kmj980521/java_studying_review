@@ -29,7 +29,7 @@ public class LearnJava {
 	public static void main(String[] args) {
 		LearnJava first_student = new LearnJava();
 		first_student.setStudent(101,"자바", 100 , "수원");
-		System.out.println(first_student.getStudentName()); //참보연산자 . 사용
+		System.out.println(first_student.getStudentName()); //참조연산자 . 사용
 		
 		LearnJava second_student=new LearnJava(102,"C++",80,"서울");
 		System.out.println(second_student.getStudentName());
