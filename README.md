@@ -14,7 +14,7 @@ ArrayList(객체 배열) 클래스 사용하기
 5.변수.get(i)은 i번째 요소의 데이터 값을 얻음.
 
 향상된 for문 
-'''java
+'''c
 for(Book lang:library)
 		{
 			lang.showinfo();
