@@ -12,3 +12,7 @@ String과 Integer 클래스로 인스턴스를 생성하여 출력을하면 , St
 equals()메소드는 기본적으로 물리적 동일성(인스턴스의 메모리 주소가 같음)을 비교한다. 단, String, Integer클래스는 값을 비교하는 메소드로 재정의 되어있고, 클래스에서 public boolean equals(Object obj) 식으로 재정의가 가능하다.
 
 자바에서는 두 인스턴스가 같다면 hashCode()메소드에서 반환하는 해시 코드 값이 같아야 한다. 즉 equals()메소드를 재정의했다면 hashCode()메소드를 재정의해야한다.
+객체 원본을 유지해 놓고 복사본을 사용한다거나, 기본 틀의 복사본을 사용해 동일한 인스턴스를 만들어 복잡한 생성 과정을 간단히 하려는 경우에는 **clone()메소드**를 사용한다. throws CloneNotSupportedException 을 클래스의 OBject clone() 이라는 재정의한 함수에 예외처리를 해주고, main에서도 해준다.
+clone()메소드만 재정의하고, Cloneable인터페이스를 명시하지 않으면, clone()메소드를 호출할 때 오류 발생. 
+
+clone()메소드를 사용할 때는 해당 클래스에 implements Cloneable 해준다.
