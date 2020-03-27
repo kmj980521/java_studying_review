@@ -18,3 +18,5 @@ clone()메소드만 재정의하고, Cloneable인터페이스를 명시하지 �
 clone()메소드를 사용할 때는 해당 클래스에 implements Cloneable 해준다.
 
 String 클래스에서 test, 10,20,등과 같이 프로그램에서 사용되는 상수 값을 저장하는 공간을 **상수 풀**이라고 한다.
+
+String =new String()으로 생성하는 인스턴스는 각 주소가 다른데 String a1="abc"; String a2="abc"; a1과 a2는 가리키는 주소값이 같다.
