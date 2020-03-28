@@ -26,4 +26,4 @@ HashSet클래스는 중복된 값을 추가하지 않는다. ArrayList와 다르
 
 TreeSet 클래스를 사용하려면 자료형으로 쓰는 클래스에 implements Comparable<자료형이름> 형식을 사용해야한다.
 
-Comparable인터페이스에는 compareTo() 추상 메서드가 포함되어 있어서 이 것을 구현해야한다.
+Comparable인터페이스에는 compareTo() 추상 메서드가 포함되어 있어서 이 것을 구현해야한다. return 값이 양수면 오른쪽 자식노드로, 음수면 왼쪽 자식노드로 값이 저장된다. 
