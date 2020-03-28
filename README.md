@@ -18,4 +18,6 @@ Vector 클래스와 ArrayList 클래스의 큰 차이점은 **동기화 지원 �
 
 Collection 요소를 순회하는 Iterator / 순서가 없는 Sㄷㅅ 인터페이스를 구현한 경우에는 get(i)같은 메서드를 사용할 수 없으므로 , Iterator사용. 
 
-Iterator<클래스> ir = arrayList(선언한 ArrayList) .iterator(); 형식으로 
+Iterator<클래스> ir = arrayList(선언한 ArrayList) .iterator(); 형식으로 사용
+
+순서와 상관없이 중복을 허용하지 않는 경우 Set 인터ㅔ이스를 구현. HashSet와 TreeSet가 있다.
