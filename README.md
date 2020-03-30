@@ -12,3 +12,5 @@
 3.**try-with-resources**을 이용하면,  close()메서드를 명시적으로 호출하지 않아도 **자동으로 닫도록 만들 수 있다**. 또한 **FileInputStream클래스는 Closeable과 AutoCloseable인터페이스를 구현하고, close()메서드를 재정의** 해줘야한다. 네트워크와 데이터베이스 관련 클래스도 AutoCloserable 인터페이스를 구현하고있다. 
 
 try문에 **throw new Exception()**문장을 사용하면 **강제로 예외를 발생**시켜 catch블록이 수행되도록 구현할 수 있다.
+
+4.**throws**를 선언하여 예외처리를 해당 메서드에서 처리하지 않고, 미룬 후에 메서드를 호출하여 사용하는 부분에서 예외를 처리한다.
