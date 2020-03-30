@@ -18,3 +18,13 @@ try문에 **throw new Exception()**문장을 사용하면 **강제로 예외를 
 5.**모든 예외상황을 처리하고 싶으면 catch(Exception e)**를 사용한다. 단, Exception클래스는 모든 예외 클래스의 상위클래스이므로, 맨 위에 선언하면 **자동 형 변환되어 오류가 난다**, 기본 예외 처리를 하는 Exception 클래스 블록은 여러 예외 처리 블록의 **가장 아래에 놓여야 한다**
 
 throw문으로 직접 예외를 발생, throws문으로 예외를 처리하도록 예약어 선언.
+
+사용자 정의 예외 클래스 구현하기 
+```java
+public class 예외처리명 extemds Exception{ //사용자 정의 예외 클래스 구현하기
+  public 예외처리명 (String message) //생성자의 매개변수로 예외 상황 메세지를 받음.
+  {
+    super(message); //예외 메시지를 설정
+}
+``` 
+나중에 getMessage()메서드를 호출하면 메시지 내용을 볼 수 있다.
