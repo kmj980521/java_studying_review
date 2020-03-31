@@ -20,3 +20,7 @@
 5.**FileReader**/ InputStream과 다르게 문자 단위인 char로 읽음. FileInputStream과 사용방식은 비슷
 
 6.**FileWriter** / FileOutputStream과 비슷, 문자열을 출력하고싶을 때 사용.
+
+**보조 스트림**은 자료 입출력을 직접 할 수 없기 때문에 다른 기반 스트림을 포함한다. ㅍ보조 스트림의 생성자에서 **항상 기반 스트림만 매개변수로 전달되는 것은 아니다. 또 다른 보조스트림을 매개변수로 전달받을 수도 있다** 전달되는 또 다른 보조 스트림은 내부적으로 기반 스트림을 포함하고 있다.
+
+7.**InputStreamReader** 바이트 단위로 자료를 읽으면 한글 같은 문자는 깨지므로, 문자는 Reader나 Writer에서 상속받은 스트림을 사용해야한다. 네트워크에서 소켓이나 인터넷이 연결되었을 때 읽거나 쓰는 스트림은 **바이트 단위**인 InputStream과 OutputStream인데, 바이트 스트림을 문자로 변환해 주는 보조 스트림이 InputStreamReader와 OutputStreamWriter이다.
